@@ -1,330 +1,415 @@
 :root {
-  --background-color: #ffdf8c;
-  --orange: #fe5f1e;
-  --black: #282828;
-  --grayBtn: #f9f9f9;
-  --grayBgnd: #f3f3f3;
+    --background-color: #ffdf8c;
+    --orange: #fe5f1e;
+    --darkenOrange: #e75820;
+    --black: #282828;
+    --grayBtn: #f9f9f9;
+    --grayBgnd: #f3f3f3;
 }
 
 * {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  outline: none;
-  font-family: 'Proxima Nova', Roboto, system-ui, Tahoma, sans-serif;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    outline: none;
+    font-family: 'Proxima Nova', Roboto, system-ui, Tahoma, sans-serif;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  background-color: var(--background-color);
-  margin: 40px 0;
-  font-family: 'Proxima Nova', Roboto, system-ui, Tahoma, sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  font-style: normal;
+    background-color: var(--background-color);
+    margin: 40px 0;
+    font-family: 'Proxima Nova', Roboto, system-ui, Tahoma, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
 }
 
 a {
-  text-decoration: none;
-  color: var(--black);
+    text-decoration: none;
+    color: var(--black);
 }
 
 .wrapper {
-  width: calc(100vw - 100px);
-  height: 100%;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.03);
-  margin: 50px auto;
-  max-width: 1400px;
+    width: calc(100vw - 100px);
+    height: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.03);
+    margin: 50px auto;
+    max-width: 1400px;
+    min-width: 320px;
 }
 
 .container {
-  width: 90%;
-  margin: 0 auto;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .header {
-  border-bottom: 1px solid #f6f6f6;
-  margin-bottom: 30px;
+    border-bottom: 1px solid #f6f6f6;
+    margin-bottom: 30px;
 }
 
 .header .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
 }
 
 .buttonCart {
-  display: flex;
-  align-items: center;
-  color: #fff;
-  background-color: var(--orange);
-  /* font-weight: 600; */
-  font-size: 17px;
-  padding: 13px 25px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    background-color: var(--orange);
+    font-size: 17px;
+    padding: 13px 25px;
+}
+
+.buttonCart:hover {
+    background: var(--darkenOrange);
 }
 
 .buttonCart img {
-  margin-right: 10px;
+    margin-right: 10px;
 }
 
 .delimiter {
-  width: 1px;
-  height: 25px;
-  background-color: rgba(255, 255, 255, 0.25);
-
-  margin: 0 15px;
+    width: 1px;
+    height: 25px;
+    background-color: rgba(255, 255, 255, 0.25);
+    margin: 0 15px;
 }
 
 .button {
-  border-radius: 30px;
-  text-align: center;
+    border-radius: 30px;
+    text-align: center;
+    transition: background-color 0.15s ease-in-out,
+        border-color 0.15s ease-in-out;
+}
+
+.button:active {
+    transform: translateY(1px);
 }
 
 .buttonAdd {
-  padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid var(--orange);
+    color: var(--orange);
+    font-weight: bold;
+    font-size: 16px;
 }
 
-.buttonAdd img {
-  margin-right: 5px;
+.buttonAdd:hover {
+    background-color: var(--orange);
+    color: #fff;
+    border: 1px solid transparent;
+}
+
+.buttonAdd:hover .qty {
+    background-color: #fff;
+    color: var(--orange);
+}
+
+.buttonAdd:hover svg path {
+    fill: #fff;
+}
+
+.buttonAdd svg {
+    margin-right: 5px;
 }
 
 .buttonAdd .qty {
-  display: inline-block;
-  background-color: var(--orange);
-  color: #fff;
-  border-radius: 50%;
-  width: 22px;
-  height: 22px;
-  font-weight: bold;
-  font-size: 13px;
-  line-height: 22px;
-  margin-left: 5px;
-}
-
-.button_outline {
-  background-color: #fff;
-  border: 1px solid var(--orange);
-  color: var(--orange);
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 19px;
+    display: inline-block;
+    background-color: var(--orange);
+    color: #fff;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 22px;
+    margin-left: 5px;
 }
 
 .button_active {
-  background-color: var(--orange);
+    background-color: var(--orange);
 }
 
 .topRow {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
 .siteLogo {
-  display: flex;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 19px;
-  color: #7b7b7b;
+    display: flex;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #7b7b7b;
 }
 
 .siteLogo h1 {
-  font-weight: 800;
-  font-size: 24px;
-  line-height: 29px;
-  text-transform: uppercase;
-  color: var(--black);
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: var(--black);
 }
 
 .logoTitle {
-  padding-left: 20px;
+    padding-left: 20px;
 }
 
 .searchSection {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
 }
 
 .categories {
-  display: flex;
+    display: flex;
 }
 
 .filterButton {
-  background-color: var(--grayBtn);
-  padding: 15px 30px;
-  border-radius: 30px;
-  cursor: pointer;
+    background-color: var(--grayBtn);
+    padding: 15px 30px;
+    border-radius: 30px;
+    cursor: pointer;
 }
 
 .filterButton:hover {
-  background-color: #f4f4f4;
+    background-color: #f4f4f4;
 }
 
 .filterButton:not(:last-child) {
-  margin-right: 10px;
+    margin-right: 10px;
 }
 
 .filterButton.active {
-  background-color: var(--black);
-  color: #fff;
+    background-color: var(--black);
+    color: #fff;
 }
 
 .sort {
-  position: relative;
+    position: relative;
 }
 
 .sortLabel span {
-  color: var(--orange);
-  border-bottom: 1px dashed var(--orange);
-  font-weight: 700;
-  cursor: pointer;
+    color: var(--orange);
+    border-bottom: 1px dashed var(--orange);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.sortLabel span:hover ~ .sortPopup {
+    display: block;
 }
 
 .sortLabel img {
-  margin-right: 5px;
+    margin-right: 5px;
 }
 
 .sortPopup {
-  background-color: #fff;
-  right: 0;
-  position: absolute;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.09);
-  border-radius: 10px;
+    display: none;
+    background-color: #fff;
+    top: 18px;
+    right: 0;
+    position: absolute;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.09);
+    border-radius: 10px;
+    font-weight: normal;
+}
+
+.sortPopup:hover {
+    display: block;
 }
 
 .sortItem {
-  padding: 15px 25px;
-  cursor: pointer;
+    padding: 15px 25px;
+    cursor: pointer;
 }
 
 .sortItem.active {
-  font-weight: bold;
-  color: var(--orange);
+    font-weight: bold;
+    color: var(--orange);
 }
 
 .sortItem.active,
 .sortItem:hover {
-  background: rgba(254, 95, 30, 0.05);
+    background: rgba(254, 95, 30, 0.05);
 }
 
 .cards .title {
-  margin: 35px 0;
+    font-size: 24px;
+    text-align: center;
+    margin: 35px 0;
 }
 
 .cardsList {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .card {
-  margin-bottom: 65px;
+    padding: 0 20px;
+    margin-bottom: 65px;
 }
 
 .cardImage {
-  width: 260px;
+    width: 260px;
 }
 
 .cardTitle {
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 24px;
-  text-align: center;
-
-  color: var(--black);
-
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  margin-bottom: 20px;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: var(--black);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 20px;
 }
 
 .cardSelector {
-  background-color: var(--grayBgnd);
-  padding: 6px;
-  border-radius: 10px;
-  margin-bottom: 20px;
+    background-color: var(--grayBgnd);
+    padding: 6px;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 .cardSelector ul {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-weight: 500;
 }
 
 .cardSelector ul li {
-  width: 50%;
-  padding: 8px;
+    width: 50%;
+    padding: 8px;
+    cursor: pointer;
 }
 
 .cardSelector .active {
-  background-color: #fff;
-  border-radius: 5px;
+    background-color: #fff;
+    border-radius: 5px;
 }
 
 .cardFooter {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .cardFooter .price {
-  font-weight: bold;
-  font-size: 22px;
-  line-height: 27px;
-  letter-spacing: 0.015em;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: 0.015em;
+}
+
+@media (max-width: 1200px) {
+    .searchSection {
+        flex-direction: column;
+    }
+
+    .filterButton {
+        margin-bottom: 10px;
+    }
+
+    .categories {
+        margin-bottom: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1000px) {
+    .cardsList {
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width: 640px) {
+    .header {
+        margin-bottom: 0;
+    }
+
+    .header .container {
+        flex-direction: column;
+    }
+
+    .siteLogo {
+        margin-bottom: 30px;
+    }
+
+    .wrapper {
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        font-size: 12px;
+    }
+
+    body {
+        background-color: #fff;
+        margin: 0;
+    }
 }
 
 @font-face {
-  font-family: 'Proxima Nova';
-  src: url('./assets/fonts/ProximaNova-Black.eot');
-  src: local('./assets/fonts/Proxima Nova Black'), local('ProximaNova-Black'),
-    url('./assets/fonts/ProximaNova-Black.eot?#iefix')
-      format('embedded-opentype'),
-    url('./assets/fonts/ProximaNova-Black.woff') format('woff'),
-    url('./assets/fonts/ProximaNova-Black.ttf') format('truetype');
-  font-weight: 900;
-  font-style: normal;
+    font-family: 'Proxima Nova';
+    src: url('./assets/fonts/ProximaNova-Black.eot');
+    src: local('./assets/fonts/Proxima Nova Black'), local('ProximaNova-Black'),
+        url('./assets/fonts/ProximaNova-Black.eot?#iefix')
+            format('embedded-opentype'),
+        url('./assets/fonts/ProximaNova-Black.woff') format('woff'),
+        url('./assets/fonts/ProximaNova-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: 'Proxima Nova';
-  src: url('./assets/fonts/ProximaNova-Bold.eot');
-  src: local('./assets/fonts/Proxima Nova Bold'), local('ProximaNova-Bold'),
-    url('./assets/fonts/ProximaNova-Bold.eot?#iefix')
-      format('embedded-opentype'),
-    url('./assets/fonts/ProximaNova-Bold.woff') format('woff'),
-    url('./assets/fonts/ProximaNova-Bold.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
+    font-family: 'Proxima Nova';
+    src: url('./assets/fonts/ProximaNova-Bold.eot');
+    src: local('./assets/fonts/Proxima Nova Bold'), local('ProximaNova-Bold'),
+        url('./assets/fonts/ProximaNova-Bold.eot?#iefix')
+            format('embedded-opentype'),
+        url('./assets/fonts/ProximaNova-Bold.woff') format('woff'),
+        url('./assets/fonts/ProximaNova-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: 'Proxima Nova';
-  src: url('./assets/fonts/ProximaNova-Regular.eot');
-  src: local('./assets/fonts/Proxima Nova Regular'),
-    local('ProximaNova-Regular'),
-    url('./assets/fonts/ProximaNova-Regular.eot?#iefix')
-      format('embedded-opentype'),
-    url('./assets/fonts/ProximaNova-Regular.woff') format('woff'),
-    url('./assets/fonts/ProximaNova-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'Proxima Nova';
+    src: url('./assets/fonts/ProximaNova-Regular.eot');
+    src: local('./assets/fonts/Proxima Nova Regular'),
+        local('ProximaNova-Regular'),
+        url('./assets/fonts/ProximaNova-Regular.eot?#iefix')
+            format('embedded-opentype'),
+        url('./assets/fonts/ProximaNova-Regular.woff') format('woff'),
+        url('./assets/fonts/ProximaNova-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: 'Proxima Nova';
-  src: url('./assets/fonts/ProximaNova-Extrabld.eot');
-  src: local('./assets/fonts/Proxima Nova Extrabold'),
-    local('ProximaNova-Extrabld'),
-    url('./assets/fonts/ProximaNova-Extrabld.eot?#iefix')
-      format('embedded-opentype'),
-    url('./assets/fonts/ProximaNova-Extrabld.woff') format('woff'),
-    url('./assets/fonts/ProximaNova-Extrabld.ttf') format('truetype');
-  font-weight: 800;
-  font-style: normal;
+    font-family: 'Proxima Nova';
+    src: url('./assets/fonts/ProximaNova-Extrabld.eot');
+    src: local('./assets/fonts/Proxima Nova Extrabold'),
+        local('ProximaNova-Extrabld'),
+        url('./assets/fonts/ProximaNova-Extrabld.eot?#iefix')
+            format('embedded-opentype'),
+        url('./assets/fonts/ProximaNova-Extrabld.woff') format('woff'),
+        url('./assets/fonts/ProximaNova-Extrabld.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
 }

@@ -1,408 +1,456 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="wrapper">
-      <header class="header">
-        <div class="container">
-          <a href="/" class="siteLogo">
-            <img src="./assets/icons/logo.svg" alt="logo" />
-            <div class="logoTitle">
-              <h1>React Pizza</h1>
-              <p>самая вкусная пицца во вселенной</p>
-            </div>
-          </a>
-          <a href="/" class="button buttonCart">
-            <span>420 ₴</span>
-            <div class="delimiter"></div>
-            <img src="./assets/icons/cart.svg" alt="" />
-            <span>3</span>
-          </a>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <div class="container">
+                    <a href="/" class="siteLogo">
+                        <img src="./assets/icons/logo.svg" alt="logo" />
+                        <div class="logoTitle">
+                            <h1>React Pizza</h1>
+                            <p>самая вкусная пицца во вселенной</p>
+                        </div>
+                    </a>
+                    <a href="/" class="button buttonCart">
+                        <span>420 ₴</span>
+                        <div class="delimiter"></div>
+                        <img src="./assets/icons/cart.svg" alt="" />
+                        <span>3</span>
+                    </a>
+                </div>
+            </header>
+            <main class="container">
+                <section class="searchSection">
+                    <ul class="categories">
+                        <li class="filterButton active">Все</li>
+                        <li class="filterButton">Мясные</li>
+                        <li class="filterButton">Вегетерианская</li>
+                        <li class="filterButton">Гриль</li>
+                        <li class="filterButton">Острые</li>
+                        <li class="filterButton">Закрытые</li>
+                    </ul>
+                    <div class="sort">
+                        <div class="sortLabel">
+                            <img
+                                src="./assets/icons/arrow-top.svg"
+                                alt="sort icon"
+                            />
+                            <b>Сортировка по:</b>
+                            <span>популярности</span>
+                            <ul class="sortPopup">
+                                <li class="sortItem active">популярности</li>
+                                <li class="sortItem">цене</li>
+                                <li class="sortItem">алфавиту</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section class="cards">
+                    <h2 class="title">Все пиццы</h2>
+                    <ul class="cardsList">
+                        <li class="cardListItem">
+                            <div class="card">
+                                <img
+                                    class="cardImage"
+                                    src="./assets/img/pizza1.png"
+                                    alt="Пицца1"
+                                />
+                                <h4 class="cardTitle">Чизбургер-пицца</h4>
+                                <div class="cardSelector">
+                                    <ul>
+                                        <li>тонкое</li>
+                                        <li class="active">традиционное</li>
+                                    </ul>
+                                    <ul>
+                                        <li>26 см.</li>
+                                        <li>30 см.</li>
+                                        <li>40 см.</li>
+                                    </ul>
+                                </div>
+                                <div class="cardFooter">
+                                    <span class="price">от 120₴</span>
+                                    <button class="button buttonAdd">
+                                        <svg
+                                            width="12"
+                                            height="12"
+                                            viewBox="0 0 12 12"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M10.8 4.8H7.2V1.2C7.2 0.5373 6.6627 0 6 0C5.3373 0 4.8 0.5373 4.8 1.2V4.8H1.2C0.5373 4.8 0 5.3373 0 6C0 6.6627 0.5373 7.2 1.2 7.2H4.8V10.8C4.8 11.4627 5.3373 12 6 12C6.6627 12 7.2 11.4627 7.2 10.8V7.2H10.8C11.4627 7.2 12 6.6627 12 6C12 5.3373 11.4627 4.8 10.8 4.8Z"
+                                                fill="#EB5A1E"
+                                            />
+                                        </svg>
+
+                                        Добавить
+                                        <span class="qty">2</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="cardListItem">
+                            <div class="card">
+                                <img
+                                    class="cardImage"
+                                    src="./assets/img/pizza1.png"
+                                    alt="Пицца1"
+                                />
+                                <h4 class="cardTitle">Чизбургер-пицца</h4>
+                                <div class="cardSelector">
+                                    <ul>
+                                        <li>тонкое</li>
+                                        <li class="active">традиционное</li>
+                                    </ul>
+                                    <ul>
+                                        <li>26 см.</li>
+                                        <li>30 см.</li>
+                                        <li>40 см.</li>
+                                    </ul>
+                                </div>
+                                <div class="cardFooter">
+                                    <span class="price">от 120₴</span>
+                                    <button class="button buttonAdd">
+                                        <img
+                                            src="./assets/icons/plus.svg"
+                                            alt=""
+                                        />
+                                        Добавить
+                                        <span class="qty">2</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="cardListItem">
+                            <div class="card">
+                                <img
+                                    class="cardImage"
+                                    src="./assets/img/pizza1.png"
+                                    alt="Пицца1"
+                                />
+                                <h4 class="cardTitle">Чизбургер-пицца</h4>
+                                <div class="cardSelector">
+                                    <ul>
+                                        <li>тонкое</li>
+                                        <li class="active">традиционное</li>
+                                    </ul>
+                                    <ul>
+                                        <li>26 см.</li>
+                                        <li>30 см.</li>
+                                        <li>40 см.</li>
+                                    </ul>
+                                </div>
+                                <div class="cardFooter">
+                                    <span class="price">от 120₴</span>
+                                    <button class="button buttonAdd">
+                                        <img
+                                            src="./assets/icons/plus.svg"
+                                            alt=""
+                                        />
+                                        Добавить
+                                        <span class="qty">2</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="cardListItem">
+                            <div class="card">
+                                <img
+                                    class="cardImage"
+                                    src="./assets/img/pizza1.png"
+                                    alt="Пицца1"
+                                />
+                                <h4 class="cardTitle">Чизбургер-пицца</h4>
+                                <div class="cardSelector">
+                                    <ul>
+                                        <li>тонкое</li>
+                                        <li class="active">традиционное</li>
+                                    </ul>
+                                    <ul>
+                                        <li>26 см.</li>
+                                        <li>30 см.</li>
+                                        <li>40 см.</li>
+                                    </ul>
+                                </div>
+                                <div class="cardFooter">
+                                    <span class="price">от 120₴</span>
+                                    <button class="button buttonAdd">
+                                        <img
+                                            src="./assets/icons/plus.svg"
+                                            alt=""
+                                        />
+                                        Добавить
+                                        <span class="qty">2</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="cardListItem">
+                            <div class="card">
+                                <img
+                                    class="cardImage"
+                                    src="./assets/img/pizza1.png"
+                                    alt="Пицца1"
+                                />
+                                <h4 class="cardTitle">Чизбургер-пицца</h4>
+                                <div class="cardSelector">
+                                    <ul>
+                                        <li>тонкое</li>
+                                        <li class="active">традиционное</li>
+                                    </ul>
+                                    <ul>
+                                        <li>26 см.</li>
+                                        <li>30 см.</li>
+                                        <li>40 см.</li>
+                                    </ul>
+                                </div>
+                                <div class="cardFooter">
+                                    <span class="price">от 120₴</span>
+                                    <button class="button buttonAdd">
+                                        <img
+                                            src="./assets/icons/plus.svg"
+                                            alt=""
+                                        />
+                                        Добавить
+                                        <span class="qty">2</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="cardListItem">
+                            <div class="card">
+                                <img
+                                    class="cardImage"
+                                    src="./assets/img/pizza1.png"
+                                    alt="Пицца1"
+                                />
+                                <h4 class="cardTitle">Чизбургер-пицца</h4>
+                                <div class="cardSelector">
+                                    <ul>
+                                        <li>тонкое</li>
+                                        <li class="active">традиционное</li>
+                                    </ul>
+                                    <ul>
+                                        <li>26 см.</li>
+                                        <li>30 см.</li>
+                                        <li>40 см.</li>
+                                    </ul>
+                                </div>
+                                <div class="cardFooter">
+                                    <span class="price">от 120₴</span>
+                                    <button class="button buttonAdd">
+                                        <img
+                                            src="./assets/icons/plus.svg"
+                                            alt=""
+                                        />
+                                        Добавить
+                                        <span class="qty">2</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="cardListItem">
+                            <div class="card">
+                                <img
+                                    class="cardImage"
+                                    src="./assets/img/pizza1.png"
+                                    alt="Пицца1"
+                                />
+                                <h4 class="cardTitle">Чизбургер-пицца</h4>
+                                <div class="cardSelector">
+                                    <ul>
+                                        <li>тонкое</li>
+                                        <li class="active">традиционное</li>
+                                    </ul>
+                                    <ul>
+                                        <li>26 см.</li>
+                                        <li>30 см.</li>
+                                        <li>40 см.</li>
+                                    </ul>
+                                </div>
+                                <div class="cardFooter">
+                                    <span class="price">от 120₴</span>
+                                    <button class="button buttonAdd">
+                                        <img
+                                            src="./assets/icons/plus.svg"
+                                            alt=""
+                                        />
+                                        Добавить
+                                        <span class="qty">2</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="cardListItem">
+                            <div class="card">
+                                <img
+                                    class="cardImage"
+                                    src="./assets/img/pizza1.png"
+                                    alt="Пицца1"
+                                />
+                                <h4 class="cardTitle">Чизбургер-пицца</h4>
+                                <div class="cardSelector">
+                                    <ul>
+                                        <li>тонкое</li>
+                                        <li class="active">традиционное</li>
+                                    </ul>
+                                    <ul>
+                                        <li>26 см.</li>
+                                        <li>30 см.</li>
+                                        <li>40 см.</li>
+                                    </ul>
+                                </div>
+                                <div class="cardFooter">
+                                    <span class="price">от 120₴</span>
+                                    <button class="button buttonAdd">
+                                        <img
+                                            src="./assets/icons/plus.svg"
+                                            alt=""
+                                        />
+                                        Добавить
+                                        <span class="qty">2</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="cardListItem">
+                            <div class="card">
+                                <img
+                                    class="cardImage"
+                                    src="./assets/img/pizza1.png"
+                                    alt="Пицца1"
+                                />
+                                <h4 class="cardTitle">Чизбургер-пицца</h4>
+                                <div class="cardSelector">
+                                    <ul>
+                                        <li>тонкое</li>
+                                        <li class="active">традиционное</li>
+                                    </ul>
+                                    <ul>
+                                        <li>26 см.</li>
+                                        <li>30 см.</li>
+                                        <li>40 см.</li>
+                                    </ul>
+                                </div>
+                                <div class="cardFooter">
+                                    <span class="price">от 120₴</span>
+                                    <button class="button buttonAdd">
+                                        <img
+                                            src="./assets/icons/plus.svg"
+                                            alt=""
+                                        />
+                                        Добавить
+                                        <span class="qty">2</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="cardListItem">
+                            <div class="card">
+                                <img
+                                    class="cardImage"
+                                    src="./assets/img/pizza1.png"
+                                    alt="Пицца1"
+                                />
+                                <h4 class="cardTitle">Чизбургер-пицца</h4>
+                                <div class="cardSelector">
+                                    <ul>
+                                        <li>тонкое</li>
+                                        <li class="active">традиционное</li>
+                                    </ul>
+                                    <ul>
+                                        <li>26 см.</li>
+                                        <li>30 см.</li>
+                                        <li>40 см.</li>
+                                    </ul>
+                                </div>
+                                <div class="cardFooter">
+                                    <span class="price">от 120₴</span>
+                                    <button class="button buttonAdd">
+                                        <img
+                                            src="./assets/icons/plus.svg"
+                                            alt=""
+                                        />
+                                        Добавить
+                                        <span class="qty">2</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="cardListItem">
+                            <div class="card">
+                                <img
+                                    class="cardImage"
+                                    src="./assets/img/pizza1.png"
+                                    alt="Пицца1"
+                                />
+                                <h4 class="cardTitle">Чизбургер-пицца</h4>
+                                <div class="cardSelector">
+                                    <ul>
+                                        <li>тонкое</li>
+                                        <li class="active">традиционное</li>
+                                    </ul>
+                                    <ul>
+                                        <li>26 см.</li>
+                                        <li>30 см.</li>
+                                        <li>40 см.</li>
+                                    </ul>
+                                </div>
+                                <div class="cardFooter">
+                                    <span class="price">от 120₴</span>
+                                    <button class="button buttonAdd">
+                                        <img
+                                            src="./assets/icons/plus.svg"
+                                            alt=""
+                                        />
+                                        Добавить
+                                        <span class="qty">2</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="cardListItem">
+                            <div class="card">
+                                <img
+                                    class="cardImage"
+                                    src="./assets/img/pizza1.png"
+                                    alt="Пицца1"
+                                />
+                                <h4 class="cardTitle">Чизбургер-пицца</h4>
+                                <div class="cardSelector">
+                                    <ul>
+                                        <li>тонкое</li>
+                                        <li class="active">традиционное</li>
+                                    </ul>
+                                    <ul>
+                                        <li>26 см.</li>
+                                        <li>30 см.</li>
+                                        <li>40 см.</li>
+                                    </ul>
+                                </div>
+                                <div class="cardFooter">
+                                    <span class="price">от 120₴</span>
+                                    <button class="button buttonAdd">
+                                        <img
+                                            src="./assets/icons/plus.svg"
+                                            alt=""
+                                        />
+                                        Добавить
+                                        <span class="qty">2</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </main>
         </div>
-      </header>
-      <main class="container">
-        <section class="searchSection">
-          <ul class="categories">
-            <li class="filterButton active">Все</li>
-            <li class="filterButton">Мясные</li>
-            <li class="filterButton">Вегетерианская</li>
-            <li class="filterButton">Гриль</li>
-            <li class="filterButton">Острые</li>
-            <li class="filterButton">Закрытые</li>
-          </ul>
-          <div class="sort">
-            <div class="sortLabel">
-              <img src="./assets/icons/arrow-top.svg" alt="sort icon" />
-              <b>Сортировка по:</b>
-              <span>популярности</span>
-            </div>
-            <ul class="sortPopup">
-              <li class="sortItem active">популярности</li>
-              <li class="sortItem">цене</li>
-              <li class="sortItem">алфавиту</li>
-            </ul>
-          </div>
-        </section>
-        <section class="cards">
-          <h2 class="title">Все пиццы</h2>
-          <ul class="cardsList">
-            <li class="cardListItem">
-              <div class="card">
-                <img
-                  class="cardImage"
-                  src="./assets/img/pizza1.png"
-                  alt="Пицца1"
-                />
-                <h4 class="cardTitle">Чизбургер-пицца</h4>
-                <div class="cardSelector">
-                  <ul>
-                    <li>тонкое</li>
-                    <li class="active">традиционное</li>
-                  </ul>
-                  <ul>
-                    <li>26 см.</li>
-                    <li>30 см.</li>
-                    <li>40 см.</li>
-                  </ul>
-                </div>
-                <div class="cardFooter">
-                  <span class="price">от 120₴</span>
-                  <button class="button button_outline buttonAdd">
-                    <img src="./assets/icons/plus.svg" alt="" />
-                    Добавить
-                    <span class="qty">2</span>
-                  </button>
-                </div>
-              </div>
-            </li>
-            <li class="cardListItem">
-              <div class="card">
-                <img
-                  class="cardImage"
-                  src="./assets/img/pizza1.png"
-                  alt="Пицца1"
-                />
-                <h4 class="cardTitle">Чизбургер-пицца</h4>
-                <div class="cardSelector">
-                  <ul>
-                    <li>тонкое</li>
-                    <li class="active">традиционное</li>
-                  </ul>
-                  <ul>
-                    <li>26 см.</li>
-                    <li>30 см.</li>
-                    <li>40 см.</li>
-                  </ul>
-                </div>
-                <div class="cardFooter">
-                  <span class="price">от 120₴</span>
-                  <button class="button button_outline buttonAdd">
-                    <img src="./assets/icons/plus.svg" alt="" />
-                    Добавить
-                    <span class="qty">2</span>
-                  </button>
-                </div>
-              </div>
-            </li>
-            <li class="cardListItem">
-              <div class="card">
-                <img
-                  class="cardImage"
-                  src="./assets/img/pizza1.png"
-                  alt="Пицца1"
-                />
-                <h4 class="cardTitle">Чизбургер-пицца</h4>
-                <div class="cardSelector">
-                  <ul>
-                    <li>тонкое</li>
-                    <li class="active">традиционное</li>
-                  </ul>
-                  <ul>
-                    <li>26 см.</li>
-                    <li>30 см.</li>
-                    <li>40 см.</li>
-                  </ul>
-                </div>
-                <div class="cardFooter">
-                  <span class="price">от 120₴</span>
-                  <button class="button button_outline buttonAdd">
-                    <img src="./assets/icons/plus.svg" alt="" />
-                    Добавить
-                    <span class="qty">2</span>
-                  </button>
-                </div>
-              </div>
-            </li>
-            <li class="cardListItem">
-              <div class="card">
-                <img
-                  class="cardImage"
-                  src="./assets/img/pizza1.png"
-                  alt="Пицца1"
-                />
-                <h4 class="cardTitle">Чизбургер-пицца</h4>
-                <div class="cardSelector">
-                  <ul>
-                    <li>тонкое</li>
-                    <li class="active">традиционное</li>
-                  </ul>
-                  <ul>
-                    <li>26 см.</li>
-                    <li>30 см.</li>
-                    <li>40 см.</li>
-                  </ul>
-                </div>
-                <div class="cardFooter">
-                  <span class="price">от 120₴</span>
-                  <button class="button button_outline buttonAdd">
-                    <img src="./assets/icons/plus.svg" alt="" />
-                    Добавить
-                    <span class="qty">2</span>
-                  </button>
-                </div>
-              </div>
-            </li>
-            <li class="cardListItem">
-              <div class="card">
-                <img
-                  class="cardImage"
-                  src="./assets/img/pizza1.png"
-                  alt="Пицца1"
-                />
-                <h4 class="cardTitle">Чизбургер-пицца</h4>
-                <div class="cardSelector">
-                  <ul>
-                    <li>тонкое</li>
-                    <li class="active">традиционное</li>
-                  </ul>
-                  <ul>
-                    <li>26 см.</li>
-                    <li>30 см.</li>
-                    <li>40 см.</li>
-                  </ul>
-                </div>
-                <div class="cardFooter">
-                  <span class="price">от 120₴</span>
-                  <button class="button button_outline buttonAdd">
-                    <img src="./assets/icons/plus.svg" alt="" />
-                    Добавить
-                    <span class="qty">2</span>
-                  </button>
-                </div>
-              </div>
-            </li>
-            <li class="cardListItem">
-              <div class="card">
-                <img
-                  class="cardImage"
-                  src="./assets/img/pizza1.png"
-                  alt="Пицца1"
-                />
-                <h4 class="cardTitle">Чизбургер-пицца</h4>
-                <div class="cardSelector">
-                  <ul>
-                    <li>тонкое</li>
-                    <li class="active">традиционное</li>
-                  </ul>
-                  <ul>
-                    <li>26 см.</li>
-                    <li>30 см.</li>
-                    <li>40 см.</li>
-                  </ul>
-                </div>
-                <div class="cardFooter">
-                  <span class="price">от 120₴</span>
-                  <button class="button button_outline buttonAdd">
-                    <img src="./assets/icons/plus.svg" alt="" />
-                    Добавить
-                    <span class="qty">2</span>
-                  </button>
-                </div>
-              </div>
-            </li>
-            <li class="cardListItem">
-              <div class="card">
-                <img
-                  class="cardImage"
-                  src="./assets/img/pizza1.png"
-                  alt="Пицца1"
-                />
-                <h4 class="cardTitle">Чизбургер-пицца</h4>
-                <div class="cardSelector">
-                  <ul>
-                    <li>тонкое</li>
-                    <li class="active">традиционное</li>
-                  </ul>
-                  <ul>
-                    <li>26 см.</li>
-                    <li>30 см.</li>
-                    <li>40 см.</li>
-                  </ul>
-                </div>
-                <div class="cardFooter">
-                  <span class="price">от 120₴</span>
-                  <button class="button button_outline buttonAdd">
-                    <img src="./assets/icons/plus.svg" alt="" />
-                    Добавить
-                    <span class="qty">2</span>
-                  </button>
-                </div>
-              </div>
-            </li>
-            <li class="cardListItem">
-              <div class="card">
-                <img
-                  class="cardImage"
-                  src="./assets/img/pizza1.png"
-                  alt="Пицца1"
-                />
-                <h4 class="cardTitle">Чизбургер-пицца</h4>
-                <div class="cardSelector">
-                  <ul>
-                    <li>тонкое</li>
-                    <li class="active">традиционное</li>
-                  </ul>
-                  <ul>
-                    <li>26 см.</li>
-                    <li>30 см.</li>
-                    <li>40 см.</li>
-                  </ul>
-                </div>
-                <div class="cardFooter">
-                  <span class="price">от 120₴</span>
-                  <button class="button button_outline buttonAdd">
-                    <img src="./assets/icons/plus.svg" alt="" />
-                    Добавить
-                    <span class="qty">2</span>
-                  </button>
-                </div>
-              </div>
-            </li>
-            <li class="cardListItem">
-              <div class="card">
-                <img
-                  class="cardImage"
-                  src="./assets/img/pizza1.png"
-                  alt="Пицца1"
-                />
-                <h4 class="cardTitle">Чизбургер-пицца</h4>
-                <div class="cardSelector">
-                  <ul>
-                    <li>тонкое</li>
-                    <li class="active">традиционное</li>
-                  </ul>
-                  <ul>
-                    <li>26 см.</li>
-                    <li>30 см.</li>
-                    <li>40 см.</li>
-                  </ul>
-                </div>
-                <div class="cardFooter">
-                  <span class="price">от 120₴</span>
-                  <button class="button button_outline buttonAdd">
-                    <img src="./assets/icons/plus.svg" alt="" />
-                    Добавить
-                    <span class="qty">2</span>
-                  </button>
-                </div>
-              </div>
-            </li>
-            <li class="cardListItem">
-              <div class="card">
-                <img
-                  class="cardImage"
-                  src="./assets/img/pizza1.png"
-                  alt="Пицца1"
-                />
-                <h4 class="cardTitle">Чизбургер-пицца</h4>
-                <div class="cardSelector">
-                  <ul>
-                    <li>тонкое</li>
-                    <li class="active">традиционное</li>
-                  </ul>
-                  <ul>
-                    <li>26 см.</li>
-                    <li>30 см.</li>
-                    <li>40 см.</li>
-                  </ul>
-                </div>
-                <div class="cardFooter">
-                  <span class="price">от 120₴</span>
-                  <button class="button button_outline buttonAdd">
-                    <img src="./assets/icons/plus.svg" alt="" />
-                    Добавить
-                    <span class="qty">2</span>
-                  </button>
-                </div>
-              </div>
-            </li>
-            <li class="cardListItem">
-              <div class="card">
-                <img
-                  class="cardImage"
-                  src="./assets/img/pizza1.png"
-                  alt="Пицца1"
-                />
-                <h4 class="cardTitle">Чизбургер-пицца</h4>
-                <div class="cardSelector">
-                  <ul>
-                    <li>тонкое</li>
-                    <li class="active">традиционное</li>
-                  </ul>
-                  <ul>
-                    <li>26 см.</li>
-                    <li>30 см.</li>
-                    <li>40 см.</li>
-                  </ul>
-                </div>
-                <div class="cardFooter">
-                  <span class="price">от 120₴</span>
-                  <button class="button button_outline buttonAdd">
-                    <img src="./assets/icons/plus.svg" alt="" />
-                    Добавить
-                    <span class="qty">2</span>
-                  </button>
-                </div>
-              </div>
-            </li>
-            <li class="cardListItem">
-              <div class="card">
-                <img
-                  class="cardImage"
-                  src="./assets/img/pizza1.png"
-                  alt="Пицца1"
-                />
-                <h4 class="cardTitle">Чизбургер-пицца</h4>
-                <div class="cardSelector">
-                  <ul>
-                    <li>тонкое</li>
-                    <li class="active">традиционное</li>
-                  </ul>
-                  <ul>
-                    <li>26 см.</li>
-                    <li>30 см.</li>
-                    <li>40 см.</li>
-                  </ul>
-                </div>
-                <div class="cardFooter">
-                  <span class="price">от 120₴</span>
-                  <button class="button button_outline buttonAdd">
-                    <img src="./assets/icons/plus.svg" alt="" />
-                    Добавить
-                    <span class="qty">2</span>
-                  </button>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </section>
-      </main>
-    </div>
-  </body>
+    </body>
 </html>
